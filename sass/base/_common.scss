@@ -1,0 +1,72 @@
+body {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,86;
+    letter-spacing: 0.02em;
+    color: var(--main-text-cl);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    margin: 0;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include for-size(mobile) {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include for-size(tablet) {
+        width: 768px;
+    }
+
+    @include for-size(desktop) {
+        width: 1200px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
