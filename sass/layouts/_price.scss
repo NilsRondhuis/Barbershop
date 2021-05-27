@@ -1,0 +1,49 @@
+.price-section {
+    background-color: #191C26;
+    background-image: url(../images/price-bg/modile/price-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/price-bg/modile/price-bg@2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/price-bg/modile/price-bg@3x.png);
+    }
+}
+
+.title.price-title {
+    @include fonts-property(42px, 1.16);
+    color: var(--secondary-cl);
+    margin-bottom: 45px;
+}
+
+.price-list.mobile {
+    padding: 30px;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    margin-bottom: 40px;
+
+    .item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.price-text {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
+    line-height: 2.14;
+    color: var(--gray-cl);
+
+    .price-line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.12);
+    }
+}

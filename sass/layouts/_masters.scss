@@ -1,0 +1,30 @@
+.masters-section {
+    background-color: #F7F7F7;
+}
+
+.title.masters-title {
+    margin-bottom: 45px;
+    @include fonts-property(42px, 1.17);
+}
+
+.masters-list {
+
+    .masters-item {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+
+        .name-master {
+            margin-top: 30px;
+            @include fonts-property(18px, 1.39);
+        }
+        
+        .position-master {
+            margin: 10px 0 0 0;
+            @include fonts-property(14px, 1.36);
+            color: var(--accent-cl);
+        }
+    }
+}

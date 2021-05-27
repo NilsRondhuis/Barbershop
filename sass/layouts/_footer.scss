@@ -1,0 +1,16 @@
+.footer-section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .copy {
+        margin: 20px 0 0 0;
+        @include fonts-property(11px, 1.36);
+        font-weight: 600;
+        color: var(--gray-cl);
+    }
+}

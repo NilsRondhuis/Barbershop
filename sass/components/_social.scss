@@ -1,0 +1,40 @@
+.social-list {
+
+    .item {
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        .social-link {
+            font-weight: 600;
+            @include fonts-property(14px, 1.36);
+            color: var(--heading-cl);
+            transition: color 250ms linear;
+
+            &:hover,
+            &:focus {
+                color: var(--accent-cl);
+            }
+        }
+    }
+
+    &.footer {
+        display: flex;
+        align-items: baseline;
+
+        .item {
+            &:not(:last-child) {
+                margin: 0 40px 0 0;
+            }
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 40px;
+            width: 60px;
+            height: 1px;
+            background-color: currentColor;
+        }
+    }
+}

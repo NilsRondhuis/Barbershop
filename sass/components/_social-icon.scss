@@ -1,0 +1,28 @@
+.social-list-icon {
+    display: inline-flex;
+    margin-top: 30px;
+
+    .item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.icon-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-cl);
+
+    .icon {
+        fill: var(--heading-cl);
+        transition: fill 250ms linear;
+    }
+
+    &:hover .icon,
+    &:focus .icon {
+        fill: var(--accent-cl);
+    }
+}

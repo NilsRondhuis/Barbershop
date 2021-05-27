@@ -1,0 +1,46 @@
+.title.oldschool-title {
+    margin-bottom: 20px;
+    @include fonts-property(42px, 1.17);
+}
+
+.oldschool-text {
+    margin-bottom: 45px;
+    @include fonts-property(18px, 1.67);
+}
+
+.advantages-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    .item {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+        padding: 20px 35px;
+        text-align: center;
+        background-color: #F7F7F7;
+    }
+}
+
+.number {
+    @include fonts-property(42px, 1.36);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    @media screen and (max-width: 380px) {
+        font-size: 22px;
+    }
+
+    .plus {
+        @include fonts-property(16px, 1.37);
+        font-weight: 600;
+        vertical-align: top;
+        color: var(--accent-cl);
+    }
+}
+
+.subtitle {
+    margin-bottom: 0;
+    @include fonts-property(11px, 1.36);
+    font-weight: 600;
+}

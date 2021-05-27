@@ -1,0 +1,53 @@
+.form-section {
+    background-color: #191C26;
+}
+
+.contacts-section {
+    background-color: #191C26;
+    background-image: url(../images/contacts-bg/mobile/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/contacts-bg/mobile/contacts-bg@2x.png);
+    }
+}
+
+.title.form-title,
+.title.contacts-title {
+    margin-bottom: 45px;
+    @include fonts-property(42px, 1.17);
+    color: var(--secondary-cl);
+}
+
+.address-list {
+    margin-bottom: 45px; 
+
+    .item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.address-link,
+.time {
+    @include fonts-property(18px, 1.67);
+    color: var(--gray-cl);
+    margin: 0;
+}
+
+.address-link {
+    position: relative;
+    padding-left: 25px;
+
+    .address-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-40%);
+        width: 20px;
+        height: 20px;
+    }
+}

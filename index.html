@@ -10,25 +10,46 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <a href="" class="logo">
-                <svg width="69" height="55">
+        <nav class="main-nav">
+            <a href="" class="link logo">
+                <svg class="icon-logo">
                     <use href="./images/svg/sprite.svg#logo"></use>
                 </svg>
             </a>
 
-            <ul>
-                <li><a href="" class="link">О нас</a></li>
-                <li><a href="" class="link">Услуги и цены</a></li>
-                <li><a href="" class="link">Мастера</a></li>
-                <li><a href="" class="link">Контакты</a></li>
-            </ul>
+            <button type="button" class="menu-btn" data-menu-button>
+                <svg class="icon">
+                    <use class="icon-menu" href="./images/svg/sprite.svg#menu"></use>
+                    <use class="icon-cross" href="./images/svg/sprite.svg#close"></use>
+                </svg>
+            </button>
+
+            <div class="menu" data-menu>
+                <div class="menu-box">
+                    <ul class="list menu-list">
+                        <li class="item"><a href="#about" class="link menu-link">О нас</a></li>
+                        <li class="item"><a href="#price" class="link menu-link">Услуги и цены</a></li>
+                        <li class="item"><a href="#masters" class="link menu-link">Мастера</a></li>
+                        <li class="item"><a href="#contacts" class="link menu-link">Контакты</a></li>
+                    </ul>
+        
+                    <ul class="list connection-list">
+                        <li class="item"><a href="tel:+380441111111" class="link tel-link">+38 044 111 11 11</a></li>
+                        <li class="item"><button type="button" class="btn">онлайн-запись</button></li>
+                    </ul>
+        
+                    <ul class="list social-list">
+                        <li class="item"><a href="" class="link social-link">Instagram</a></li>
+                        <li class="item"><a href="" class="link social-link">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <ul>
+        <!-- <ul>
             <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
             <li><button type="button">онлайн-запись</button></li>
-        </ul>
+        </ul> -->
     </header>
 
     <main>
@@ -41,15 +62,15 @@
                     <p class="hero-text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
                 </div>
 
-                <ul class="list hero-social">
+                <!-- <ul class="list social-list">
                     <li class="item"><a href="" class="link social-link">Instagram</a></li>
                     <li class="item"><a href="" class="link social-link">Youtube</a></li>
-                </ul>
+                </ul> -->
             </div>
         </section>
 
         <!-- About -->
-        <section class="section about-section"> 
+        <section class="section about-section" id="about"> 
             <div class="container">
                 <div class="box">
                     <picture>
@@ -92,7 +113,7 @@
         </section>
 
         <!-- Price -->
-        <section class="section price-section">
+        <section class="section price-section" id="price">
             <div class="container">
                 <p class="overhead">Проведи время в компании лучших мастеров</p>
                 <h2 class="title price-title">Услуги и цены</h2>
@@ -147,7 +168,7 @@
         </section>
 
         <!-- Masters -->
-        <section class="section masters-section">
+        <section class="section masters-section" id="masters">
             <div class="container">
                 <p class="overhead dark">для настоящих ценителей атмосферы</p>
                 <h2 class="title masters-title">Наши мастера</h2>
@@ -179,7 +200,7 @@
                     <p class="name-master">John Smith</p>
                     <p class="position-master">Extreme Barber</p>
 
-                    <ul class="list social-list">
+                    <ul class="list social-list-icon">
                         <li class="item">
                             <a href="" class="link icon-link">
                                 <svg class="icon" width="20" height="20">
@@ -236,7 +257,7 @@
                     <p class="name-master">Michele Doe</p>
                     <p class="position-master">Extreme Barber</p>
 
-                    <ul class="list social-list">
+                    <ul class="list social-list-icon">
                         <li class="item">
                             <a href="" class="link icon-link">
                                 <svg class="icon" width="20" height="20">
@@ -293,7 +314,7 @@
                     <p class="name-master">Alan Black</p>
                     <p class="position-master">Extreme Barber</p>
 
-                    <ul class="list social-list">
+                    <ul class="list social-list-icon">
                         <li class="item">
                             <a href="" class="link icon-link">
                                 <svg class="icon" width="20" height="20">
@@ -431,10 +452,10 @@
         </section>
 
         <!-- Contacts -->
-        <div>
+        <div id="contacts">
                 <section class="section form-section">
                 <div class="container">
-                    <h2 class="title form-title">Онлайн-запись</h2>
+                    <div class="centered"><h2 class="title form-title">Онлайн-запись</h2></div>
                     <form class="form">
                         <input class="form-field" type="text" name="user-name" placeholder="Имя*">
                         <input class="form-field" type="tel" name="user-tel" placeholder="Телефон*">
@@ -446,12 +467,33 @@
     
                 <section class="section contacts-section">
                     <div class="container">
-                        <h2 class="title contacts-title">Контакты</h2>
+                        <div class="centered"><h2 class="title contacts-title">Контакты</h2></div>
                     <address>
-                        <ul>
-                            <li><a href="" class="link address-link">ул. Васильковая, 7А Киев, 08132</a></li>
-                            <li><a href="" class="link address-link">+38 044 111 11 11</a></li>
-                            <li><a href="" class="link address-link">barbershop@email.com</a></li>
+                        <ul class="list address-list">
+                            <li class="item">
+                                <a href="" class="link address-link">
+                                    <svg class="address-icon">
+                                        <use href="./images/svg/sprite.svg#map-pin"></use>
+                                    </svg>
+                                    ул. Васильковая, 7А Киев, 08132
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" class="link address-link">
+                                    <svg class="address-icon">
+                                        <use href="./images/svg/sprite.svg#phone"></use>
+                                    </svg>
+                                    +38 044 111 11 11
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" class="address-link">
+                                    <svg class="address-icon">
+                                        <use href="./images/svg/sprite.svg#mail"></use>
+                                    </svg>
+                                    barbershop@email.com
+                                </a>
+                            </li>
                         </ul>
     
                         <div>
@@ -464,15 +506,17 @@
             </div>
     </main>
 
-    <footer class="footer footer-section">
-        <div class="container">
-            <p class="copy">&copy; Copyright 2020</p>
+    <footer class="footer-section">
+        <div class="container container-footer">
+            <p class="copy">&copy; Copyright 2021</p>
 
-            <ul>
-                <li><a href="" class="link">Instagram</a></li>
-                <li><a href="" class="link">Youtube</a></li>
+            <ul class="list social-list footer">
+                <li class="item"><a href="" class="link social-link line">Instagram</a></li>
+                <li class="item"><a href="" class="link social-link">Youtube</a></li>
             </ul>
         </div>
     </footer>
+
+    <script src="./js/menu.js" type="module"></script>
 </body>
 </html>

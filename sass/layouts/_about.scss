@@ -1,0 +1,12 @@
+.about-text {
+    @include fonts-property(16px, 1.62);
+    margin-bottom: 20px;
+}
+
+.title.about-title {
+    margin-bottom: 20px;
+}
+
+.desc {
+    margin-bottom: 40px;
+}
