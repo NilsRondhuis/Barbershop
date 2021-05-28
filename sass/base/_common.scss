@@ -6,6 +6,10 @@ body {
     line-height: 1,86;
     letter-spacing: 0.02em;
     color: var(--main-text-cl);
+
+    &.is-open {
+        overflow: hidden;
+    }
 }
 
 img {
