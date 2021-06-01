@@ -1,0 +1,27 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 10px 40px 10px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-logo {
+    width: 70px;
+    height: 55px;
+    fill: var(--secondary-cl);
+}
+
+.connection-list {
+    margin-bottom: 65px;
+
+    .item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
