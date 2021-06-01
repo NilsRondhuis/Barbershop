@@ -1,9 +1,24 @@
+.overhead.gallery-overhead {
+    margin-bottom: 45px;
+}
+
 .gallery-list {
+    @include for-size (tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 
     .item {
+        @include for-size (tablet-only) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
 
-        &:not(:last-child) {
-            margin-bottom: 30px;
+        @include for-size (tablet) {
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
         }
     }
 }
