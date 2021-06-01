@@ -8,9 +8,18 @@
 }
 
 .masters-list {
+    @include for-size (tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .masters-item {
         text-align: center;
+
+        @include for-size (tablet) {
+            width: 450px;
+        }
 
         &:not(:last-child) {
             margin-bottom: 65px;
