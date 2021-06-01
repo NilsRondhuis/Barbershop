@@ -20,23 +20,23 @@
             }
         }
     }
-}
 
-.content-box {
-    @include for-size (tablet) {
-        width: 50%;
-    }
-
-    .about-text {
-        @include fonts-property(16px, 1.62);
-        margin-bottom: 20px;
-    }
+    .content-box {
+        @include for-size (tablet) {
+            width: 50%;
+        }
     
-    .title.about-title {
-        margin-bottom: 20px;
-    }
-    
-    .desc {
-        margin-bottom: 40px;
+        .about-text {
+            @include fonts-property(16px, 1.62);
+            margin-bottom: 20px;
+        }
+        
+        .title.about-title {
+            margin-bottom: 20px;
+        }
+        
+        .desc {
+            margin-bottom: 40px;
+        }
     }
 }

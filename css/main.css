@@ -148,6 +148,13 @@ button {
   padding-bottom: 85px;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 .overhead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,22 +559,22 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .content-box {
+  .about-container .content-box {
     width: 50%;
   }
 }
 
-.content-box .about-text {
+.about-container .content-box .about-text {
   font-size: 16px;
   line-height: 1.62;
   margin-bottom: 20px;
 }
 
-.content-box .title.about-title {
+.about-container .content-box .title.about-title {
   margin-bottom: 20px;
 }
 
-.content-box .desc {
+.about-container .content-box .desc {
   margin-bottom: 40px;
 }
 
@@ -654,6 +661,24 @@ button {
   background-color: rgba(157, 164, 189, 0.12);
 }
 
+@media screen and (min-width: 768px) {
+  .oldschool-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .oldschool-container .content-box {
+    width: 500px;
+  }
+}
+
 .title.oldschool-title {
   margin-bottom: 20px;
   font-size: 42px;
@@ -672,16 +697,47 @@ button {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list {
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    width: 450px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 .advantages-list .item {
-  -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-      flex-basis: calc((100% - 2 * 30px) / 2);
-  margin: 15px;
   padding: 20px 35px;
   text-align: center;
   background-color: #F7F7F7;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list .item {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list .item {
+    width: 210px;
+  }
+  .advantages-list .item:nth-child(2n + 1) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .advantages-list .item:nth-child(2n) {
+    margin-top: 30px;
+  }
 }
 
 .number {

@@ -1,3 +1,15 @@
+.oldschool-container {
+    @include for-size (tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .content-box {
+            width: 500px;
+        }
+    }
+}
+
 .title.oldschool-title {
     margin-bottom: 20px;
     @include fonts-property(42px, 1.17);
@@ -11,14 +23,38 @@
 .advantages-list {
     display: inline-flex;
     flex-wrap: wrap;
-    margin: -15px;
+
+    @include for-size (tablet-only) {
+        margin: -15px;
+    }
+
+    @include for-size (tablet) {
+        width: 450px;
+        align-self: flex-end;
+    }
 
     .item {
-        flex-basis: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
         padding: 20px 35px;
         text-align: center;
         background-color: #F7F7F7;
+
+        @include for-size (tablet-only) {
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+
+        @include for-size (tablet) {
+            width: 210px;
+
+            &:nth-child(2n + 1) {
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+
+            &:nth-child(2n) {
+                margin-top: 30px;
+            }
+        }
     }
 }
 
