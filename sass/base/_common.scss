@@ -45,8 +45,15 @@ button {
 }
 
 .centered {
-    display: flex;
-    justify-content: center;
+    &.price-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include for-size (tablet-only) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .container {

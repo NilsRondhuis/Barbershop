@@ -6,6 +6,10 @@
 .container-footer {
     display: flex;
     justify-content: space-between;
+    
+    @include for-size (tablet) {
+        align-items: center;
+    }
 
     .copy {
         margin: 20px 0 0 0;
