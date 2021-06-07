@@ -8,17 +8,31 @@
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+
+    @include for-size (tablet-only) {
+        justify-content: space-between;
+    }
 }
 
 .icon-logo {
+    position: relative;
+    z-index: 2;
     width: 70px;
     height: 55px;
     fill: var(--secondary-cl);
+
+    @include for-size (tablet) {
+        fill: var(--heading-cl);
+    }
 }
 
 .connection-list {
+    @include for-size (tablet) {
+        &.mobile {
+            display: none;
+        }
+    }
     margin-bottom: 65px;
 
     .item:not(:last-child) {

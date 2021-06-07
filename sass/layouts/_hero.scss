@@ -22,6 +22,9 @@
     .content-box {
         width: 100%;
         max-width: 305px;
+        @include for-size (tablet) {
+            margin-left: 210px;
+        }
     }
 
     @include for-size (tablet) {
