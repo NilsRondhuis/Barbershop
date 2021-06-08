@@ -1,18 +1,6 @@
-.sidebar {
-    @include for-size (tablet) {
-        background-color: #fff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 120px;
-    }
-}
-
-
 .social-list {
     @include for-size (mobile-only) {
-        
+
         &.hero-tablet {
             display: none;
         }
@@ -22,16 +10,7 @@
 
         &.hero-tablet {
             display: flex;
-            transform: rotate(-90deg) translate(-400%, 0%);
-
-            &::before {
-                content: '';
-                display: inline-block;
-                margin-right: 40px;
-                width: 60px;
-                height: 1px;
-                background-color: currentColor;
-            }
+            transform: rotate(-90deg) translate(0%, 0%);
         }
 
         &.mobile {
@@ -44,6 +23,8 @@
 
             &:not(:last-child) {
                 margin-bottom: 25px;
+
+                
             }
         }
 
