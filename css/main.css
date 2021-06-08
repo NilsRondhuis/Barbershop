@@ -212,7 +212,7 @@ button {
   z-index: 99;
 }
 
-.main-nav {
+.header .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,10 +222,21 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .main-nav {
+  .header .main-nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -241,18 +252,44 @@ button {
   }
 }
 
-.connection-list {
-  margin-bottom: 65px;
-}
-
 @media screen and (min-width: 768px) {
   .connection-list.mobile {
     display: none;
   }
+  .connection-list.tablet-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
 }
 
-.connection-list .item:not(:last-child) {
-  margin-bottom: 25px;
+@media screen and (max-width: 767px) {
+  .connection-list {
+    margin-bottom: 65px;
+  }
+  .connection-list.tablet-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .connection-list .item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connection-list .item:nth-child(2) {
+    margin-bottom: 20px;
+  }
 }
 
 .menu-btn {
