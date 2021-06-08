@@ -452,17 +452,6 @@ button {
   fill: var(--accent-cl);
 }
 
-@media screen and (min-width: 768px) {
-  .sidebar {
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 120px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .social-list.hero-tablet {
     display: none;
@@ -474,16 +463,8 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: rotate(-90deg) translate(-400%, 0%);
-            transform: rotate(-90deg) translate(-400%, 0%);
-  }
-  .social-list.hero-tablet::before {
-    content: '';
-    display: inline-block;
-    margin-right: 40px;
-    width: 60px;
-    height: 1px;
-    background-color: currentColor;
+    -webkit-transform: rotate(-90deg) translate(0%, 0%);
+            transform: rotate(-90deg) translate(0%, 0%);
   }
   .social-list.mobile {
     display: none;
@@ -668,6 +649,17 @@ button {
   font-size: 16px;
   line-height: 1.62;
   color: var(--gray-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+  }
 }
 
 @media screen and (min-width: 768px) {
