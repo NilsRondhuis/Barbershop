@@ -50,7 +50,7 @@ button {
         justify-content: center;
     }
 
-    @include for-size (tablet-only) {
+    @include for-size (mobile-only) {
         display: flex;
         justify-content: center;
     }

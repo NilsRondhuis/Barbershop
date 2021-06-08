@@ -5,7 +5,7 @@
     }
 
     .image-box {
-        @include for-size (tablet-only) {
+        @include for-size (mobile-only) {
             display: none;
         }
 

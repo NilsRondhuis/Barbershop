@@ -2,20 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    @include for-size (tablet) {
-        .flex-tab-desk {
-            display: flex;
-
-            .form-input {
-                width: 100%;
-
-                &:not(:last-child) {
-                    margin-right: 30px;
-                }
-            }
-        }
-    }
-
     .form-field {
         margin-bottom: 45px;
         padding-bottom: 8px;

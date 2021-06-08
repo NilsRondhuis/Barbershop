@@ -10,7 +10,7 @@
     }
 
     .item {
-        @include for-size (tablet-only) {
+        @include for-size (mobile-only) {
             &:not(:last-child) {
                 margin-bottom: 30px;
             }
