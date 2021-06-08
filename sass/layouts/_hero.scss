@@ -66,3 +66,14 @@
     @include fonts-property(16px, 1.62);
     color: var(--gray-cl);
 }
+
+.sidebar {
+    @include for-size (tablet) {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 120px;
+    }
+}
