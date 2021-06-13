@@ -8,6 +8,11 @@
             width: 500px;
         }
     }
+
+    @include for-size (desktop) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
 
 .title.oldschool-title {

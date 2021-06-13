@@ -1033,6 +1033,18 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .oldschool-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .title.oldschool-title {
   margin-bottom: 20px;
   font-size: 42px;
