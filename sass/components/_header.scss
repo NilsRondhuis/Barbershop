@@ -44,6 +44,11 @@
             flex-direction: column-reverse;
             align-items: center;
             margin-left: auto;
+
+            @include for-size (desktop) {
+                flex-direction: row;
+                align-items: baseline;
+            }
         }
     }
 
@@ -61,11 +66,14 @@
             @include for-size (mobile-only) {
                 margin-bottom: 25px;
             }
+            @include for-size (desktop) {
+                margin-right: 40px;
+            }
         }
 
         &:nth-child(2) {
 
-            @include for-size (tablet) {
+            @include for-size (tablet-to-desktop) {
                 margin-bottom: 20px;
             }
         }
@@ -162,6 +170,10 @@
         @include for-size (tablet) {
             &:not(:last-child) {
                 margin-right: 25px;
+
+                @include for-size (desktop) {
+                    margin-right: 40px;
+                }
             }
         }
     }
