@@ -32,6 +32,22 @@
             background-image: url(../images/price-bg/tablet/price-bg@3x.png);
         }
     }
+
+    @include for-size (desktop) {
+        background-image: url(../../images/price-bg/desktop/price-bg.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/price-bg/desktop/price-bg@2x.png);
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+            background-image: url(../images/price-bg/desktop/price-bg@3x.png);
+        }
+    }
 }
 
 .title.price-title {
@@ -40,13 +56,39 @@
     margin-bottom: 45px;
 }
 
-.price-list.mobile {
+.price-list {
     padding: 30px;
     background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+
+    @include for-size (desktop) {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
 
     .item:not(:last-child) {
         margin-bottom: 20px;
+    }
+}
+
+.design-desktop {
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include for-size (desktop) {
+        width: 100%;
+        padding: 30px 40px;
+
+        &:nth-child(1) {
+            background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        }
+        &:nth-child(2) {
+            background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+        }
     }
 }
 

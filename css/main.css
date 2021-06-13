@@ -166,6 +166,13 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .overhead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,6 +912,24 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .price-section {
+    background-image: url(../../images/price-bg/desktop/price-bg.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .price-section {
+    background-image: url(../images/price-bg/desktop/price-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .price-section {
+    background-image: url(../images/price-bg/desktop/price-bg@3x.png);
+  }
+}
+
 .title.price-title {
   font-size: 42px;
   line-height: 1.16;
@@ -912,15 +937,47 @@ button {
   margin-bottom: 45px;
 }
 
-.price-list.mobile {
+.price-list {
   padding: 30px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
   background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.price-list.mobile .item:not(:last-child) {
+@media screen and (min-width: 1200px) {
+  .price-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+  }
+}
+
+.price-list .item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .design-desktop:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .design-desktop {
+    width: 100%;
+    padding: 30px 40px;
+  }
+  .design-desktop:nth-child(1) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .design-desktop:nth-child(2) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#090B13), to(rgba(9, 11, 19, 0.2)));
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .price-text {
