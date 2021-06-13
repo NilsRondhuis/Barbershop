@@ -3,10 +3,20 @@
 }
 
 .gallery-list {
+    @include for-size (mobile-only) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
     @include for-size (tablet) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
+    }
+    @include for-size (desktop) {
+        flex-wrap: nowrap;
+        margin: 0;
     }
 
     .item {
@@ -16,9 +26,15 @@
             }
         }
 
-        @include for-size (tablet) {
+        @include for-size (tablet-to-desktop) {
             flex-basis: calc((100% - 2 * 30px) / 2);
             margin: 15px;
+        }
+
+        @include for-size (desktop) {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
         }
     }
 }
