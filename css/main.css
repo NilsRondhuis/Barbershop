@@ -1159,6 +1159,15 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .masters-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .masters-list .masters-item {
   text-align: center;
 }
@@ -1169,8 +1178,19 @@ button {
   }
 }
 
-.masters-list .masters-item:not(:last-child) {
-  margin-bottom: 65px;
+@media screen and (min-width: 1200px) {
+  .masters-list .masters-item {
+    width: 370px;
+  }
+  .masters-list .masters-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .masters-list .masters-item:not(:last-child) {
+    margin-bottom: 65px;
+  }
 }
 
 .masters-list .masters-item .name-master {
