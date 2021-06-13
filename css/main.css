@@ -1329,6 +1329,19 @@ button {
 @media screen and (min-width: 1200px) {
   .contacts-section {
     width: 50%;
+    background-image: url(../images/contacts-bg/desktop/contacts-bg.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: url(../images/contacts-bg/desktop/contacts-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .contacts-section {
+    background-image: url(../images/contacts-bg/desktop/contacts-bg@3x.png);
   }
 }
 
