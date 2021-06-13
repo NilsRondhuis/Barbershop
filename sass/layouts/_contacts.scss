@@ -1,6 +1,9 @@
-.form-section {
-    background-color: #191C26;
+.contacts-desktop-design {
+    @include for-size (desktop) {
+        display: flex;
+    }
 }
+
 
 .contacts-section {
     background-color: #191C26;
@@ -35,6 +38,18 @@
         screen and (min-resolution: 3dppx) {
         background-image: url(../images/contacts-bg/tablet/contacts-bg@3x.png);
     }
+
+    }
+
+    @include for-size (desktop) {
+        width: 50%;
+    }
+
+    .contacts-container {
+        @include for-size (desktop) {
+            width: 100%;
+            padding-right: 100px;
+        }
     }
 }
 
@@ -49,6 +64,11 @@
     @include for-size (tablet) {
         display: flex;
         justify-content: space-between;
+    }
+
+    @include for-size (desktop) {
+        padding-right: 100px;
+        flex-direction: column;
     }
 }
 
