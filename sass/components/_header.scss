@@ -121,9 +121,11 @@
         opacity: 0;
         transition: opacity 250ms linear;
         overflow: hidden;
+        pointer-events: none;
     
         &.is-open {
             opacity: 1;
+            pointer-events: all;
         }
     
         &.is-open .menu-box {
