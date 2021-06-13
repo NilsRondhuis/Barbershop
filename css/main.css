@@ -920,7 +920,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .price-section {
-    background-image: url(../../images/price-bg/tablet/price-bg.png);
+    background-image: url(../images/price-bg/tablet/price-bg.png);
   }
 }
 
@@ -938,7 +938,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .price-section {
-    background-image: url(../../images/price-bg/desktop/price-bg.png);
+    background-image: url(../images/price-bg/desktop/price-bg.png);
   }
 }
 

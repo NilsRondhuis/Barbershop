@@ -18,7 +18,7 @@
     }
 
     @include for-size (tablet) {
-        background-image: url(../../images/price-bg/tablet/price-bg.png);
+        background-image: url(../images/price-bg/tablet/price-bg.png);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -34,7 +34,7 @@
     }
 
     @include for-size (desktop) {
-        background-image: url(../../images/price-bg/desktop/price-bg.png);
+        background-image: url(../images/price-bg/desktop/price-bg.png);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
