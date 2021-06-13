@@ -37,4 +37,8 @@
     font-weight: 700;
     letter-spacing: 0.05em;
     color: var(--heading-cl);
+
+    @include for-size (desktop) {
+        @include fonts-property(42px, 1.16);
+    }
 }
