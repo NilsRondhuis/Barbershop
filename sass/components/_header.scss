@@ -196,4 +196,8 @@
         @include fonts-property (12px, 1.33);
         color: var(--secondary-cl);
     }
+
+    @include for-size (desktop) {
+        @include fonts-property (14px, 1.36);
+    }
 }

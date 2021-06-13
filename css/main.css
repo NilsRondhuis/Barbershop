@@ -460,6 +460,14 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-link,
+  .tel-link {
+    font-size: 14px;
+    line-height: 1.36;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 12px 0;
