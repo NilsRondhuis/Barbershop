@@ -497,11 +497,14 @@ button {
 
 @media screen and (min-width: 768px) {
   .social-list.hero-tablet {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: rotate(-90deg) translate(0%, 0%);
-            transform: rotate(-90deg) translate(0%, 0%);
+    -webkit-transform: rotate(-90deg) translate(0%, 50%);
+            transform: rotate(-90deg) translate(0%, 50%);
   }
   .social-list.mobile {
     display: none;
@@ -546,13 +549,12 @@ button {
   margin: 0 40px 0 0;
 }
 
-.social-list.footer::before {
-  content: '';
-  display: inline-block;
-  margin-right: 40px;
-  width: 60px;
-  height: 1px;
-  background-color: currentColor;
+@media screen and (min-width: 768px) {
+  .social-list-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .form {
@@ -602,6 +604,7 @@ button {
 }
 
 .hero-section {
+  position: relative;
   padding-top: 210px;
   padding-bottom: 180px;
   background-color: rgba(25, 28, 38, 0.2);

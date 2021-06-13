@@ -9,8 +9,11 @@
     @include for-size (tablet) {
 
         &.hero-tablet {
+            position: absolute;
+            bottom: 30%;
+            right: 0;
             display: flex;
-            transform: rotate(-90deg) translate(0%, 0%);
+            transform: rotate(-90deg) translate(0%, 50%);
         }
 
         &.mobile {
@@ -58,13 +61,20 @@
             }
         }
 
-        &::before {
-            content: '';
-            display: inline-block;
-            margin-right: 40px;
-            width: 60px;
-            height: 1px;
-            background-color: currentColor;
-        }
+        // &::before {
+        //     content: '';
+        //     display: inline-block;
+        //     margin-right: 40px;
+        //     width: 60px;
+        //     height: 1px;
+        //     background-color: currentColor;
+        // }
+    }
+}
+
+
+.social-list-flex {
+    @include for-size (tablet) {
+        display: flex;
     }
 }
