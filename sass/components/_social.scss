@@ -71,10 +71,3 @@
         // }
     }
 }
-
-
-.social-list-flex {
-    @include for-size (tablet) {
-        display: flex;
-    }
-}

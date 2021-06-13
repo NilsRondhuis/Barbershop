@@ -2,6 +2,24 @@
     display: flex;
     flex-direction: column;
 
+    .tablet-input {
+        @include for-size (mobile-only) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include for-size (tablet) {
+            display: flex;
+            .form-input {
+                flex-basis: calc((100% - 30px) / 2);
+
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }         
+        }
+    }
+
     .form-field {
         margin-bottom: 45px;
         padding-bottom: 8px;
