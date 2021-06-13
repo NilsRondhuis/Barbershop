@@ -61,7 +61,7 @@
     .contacts-container {
         @include for-size (desktop) {
             width: 100%;
-            padding-right: 100px;
+            padding-left: 100px;
         }
     }
 }
